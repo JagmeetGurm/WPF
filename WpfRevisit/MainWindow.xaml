@@ -3,9 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.Resources>
+            <Style x:Key="TextBoxErrorTemplate" TargetType="TextBox">
+                <Style.Triggers>
+                    <Trigger Property="Validation.HasError" Value="True">
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="ToolTip" 
+        Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+        Path=(Validation.Errors)[0].ErrorContent}"></Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
         <StackPanel>
             <Label Content="First Form"/>
-            <TextBlock Name="FirstTextBlock"/>
+            <TextBox Name="UserName" Text="{Binding Name,  ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxErrorTemplate}"/>
             <Button x:Name="click" Content="Click Me!" Click="click_Click"/>
         </StackPanel>
     </Grid>

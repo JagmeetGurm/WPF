@@ -23,13 +23,11 @@ namespace WpfRevisit
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
 
         private void click_Click(object sender, RoutedEventArgs e)
         {
-            var temp = new SecondWindow();
-            temp.ShowDialog();
-            FirstTextBlock.Text = temp.SecondTextBox.Text;
         }
     }
 }

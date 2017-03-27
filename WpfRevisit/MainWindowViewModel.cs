@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfRevisit
 {
-  public  class SimpleErrorMessageDisplay: INotifyPropertyChanged, IDataErrorInfo
+  public  class MainWindowViewModel: INotifyPropertyChanged, IDataErrorInfo
     {
       private string _name;
       public string Name
@@ -21,6 +21,7 @@ namespace WpfRevisit
           get { return null; }
       }
 
+      #region IDataErrorInfo
       public string this[string columnName]
       {
           get
@@ -36,6 +37,8 @@ namespace WpfRevisit
               return errorMessage;
           }
       }
+      #endregion IDataErrorInfo
+
       #region PropertyChange
       public event PropertyChangedEventHandler PropertyChanged;
       private void OnPropertyChanged(String propertyName)
