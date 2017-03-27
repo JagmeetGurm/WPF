@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfRevisit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Label Content="First Form"/>
+            <TextBlock Name="FirstTextBlock"/>
+            <Button x:Name="click" Content="Click Me!" Click="click_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

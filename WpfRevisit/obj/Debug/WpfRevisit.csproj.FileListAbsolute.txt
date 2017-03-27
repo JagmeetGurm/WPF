@@ -1,0 +1,17 @@
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\bin\Debug\WpfRevisit.exe.config
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\bin\Debug\WpfRevisit.exe
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\bin\Debug\WpfRevisit.pdb
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.csprojResolveAssemblyReference.cache
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\MainWindow.baml
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\Page2nd.baml
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\MainWindow.g.cs
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\Page2nd.g.cs
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\App.g.cs
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit_MarkupCompile.cache
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.g.resources
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.Properties.Resources.resources
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.csproj.GenerateResource.Cache
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.exe
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\WpfRevisit.pdb
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\SecondWindow.baml
+c:\users\jagmeet\documents\visual studio 2013\WpfRevisit\WpfRevisit\obj\Debug\SecondWindow.g.cs

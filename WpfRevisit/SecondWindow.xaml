@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfRevisit.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SecondWindow" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="Second Form"/>
+            <TextBox Name="SecondTextBox"/>
+        </StackPanel>
+    </Grid>
+</Window>
