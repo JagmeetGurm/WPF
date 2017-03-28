@@ -9,6 +9,23 @@ namespace WpfRevisit
 {
   public  class MainWindowViewModel: INotifyPropertyChanged, IDataErrorInfo
     {
+      public MainWindowViewModel()
+      {
+          MyDate = DateTime.Today;
+      }
+      private DateTime _myDate;
+      public DateTime MyDate
+      {
+          get { return _myDate; }
+          set { _myDate = value; OnPropertyChanged("MyDate"); LabelDate = value; }
+      }
+
+      private DateTime _labelDate;
+      public DateTime LabelDate
+      {
+          get { return _labelDate; }
+          set { _labelDate = value; OnPropertyChanged("LabelDate"); }
+      }
       private string _name;
       public string Name
       {

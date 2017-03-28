@@ -7,10 +7,20 @@
             <Style x:Key="TextBoxErrorTemplate" TargetType="TextBox">
                 <Style.Triggers>
                     <Trigger Property="Validation.HasError" Value="True">
-                        <Setter Property="Background" Value="Red"/>
-                        <Setter Property="ToolTip" 
-        Value="{Binding RelativeSource={x:Static RelativeSource.Self},
-        Path=(Validation.Errors)[0].ErrorContent}"></Setter>
+                        <Setter Property="Validation.ErrorTemplate">
+                            <Setter.Value>
+                                <ControlTemplate x:Name="TextErrorTemplate">
+                                    <DockPanel>
+                                        <Border BorderBrush="Red" BorderThickness="1">
+                                            <AdornedElementPlaceholder/>
+                                        </Border>
+                                        <TextBlock FontSize="20" Text="*" Foreground="Red"
+                                                   ToolTip="{Binding Path=AdornedElement.ToolTip,
+                                            RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Adorner}}}"></TextBlock>
+                                    </DockPanel>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
                     </Trigger>
                 </Style.Triggers>
             </Style>
@@ -19,6 +29,8 @@
             <Label Content="First Form"/>
             <TextBox Name="UserName" Text="{Binding Name,  ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxErrorTemplate}"/>
             <Button x:Name="click" Content="Click Me!" Click="click_Click"/>
+            <DatePicker SelectedDate="{Binding MyDate}"></DatePicker>
+            <Label Content="{Binding LabelDate}"/>
         </StackPanel>
     </Grid>
 </Window>
